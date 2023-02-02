@@ -1,3 +1,7 @@
+/* Create an useIdle() hook in React that will return the boolean value
+depending upon the active or inactive state of the user after a defined
+amount of time. */
+
 import { useState, useRef, useEffect } from 'react';
 
 const useIdle = (delay) => {
