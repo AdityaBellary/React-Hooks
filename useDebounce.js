@@ -4,7 +4,8 @@ We will be using useRef() to track the timerId of setTimeout so that we
 can reset it if a subsequent full call is made within the defined time.
 Also, we will wrap the logic inside the useCallback() to avoid needless
 re-renderings as the callback function returns a memoized function
-that only changes when one of the dependencies changes. */
+that only changes when one of the dependencies changes. 
+*/
 import { useCallback, useEffect, useRef } from 'react';
 
 const useDebounce = (func, delay, immediate = false) => {
